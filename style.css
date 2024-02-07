@@ -107,6 +107,13 @@ body{
     opacity: 0;
     scale: 0;
 }
+.seperator {
+    display: flex;
+    justify-content:space-between;
+}
+.seperator span{
+    padding:10px 20px;
+}
 #page2{
     min-height: 100vh;
     width: 100%;
@@ -139,12 +146,42 @@ body{
     z-index: 9;
     background-color:palegoldenrod;
 }
+#page2 .elem .dets #setting{
+    padding-top: 8px;
+    padding-left: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 50px;
+}
 #page2 .elem .dets:hover{
     height: 200px;
 
 }
+.comment .head{
+    display: flex;
+    /* justify-content:space-between; */
+}
+.comment .head #snippet p {
+    font-size: large;
+    padding-left: 40vh;
+}
+.comment .head #snippet a{
+    padding-left:40vh ;
+    color: #333;
+    font-size: small;
+    font-weight:20;
+}
+.comment .head h1{
+    padding-left: 20px;
+    font-size: 4vw;
+    font-family: 'futura';
+    line-height: 4vw;
+    letter-spacing: -3px;
+}
 #page3{
-    min-height: 120vh;
+    min-height: 200vh;
     width: 100%;
     display: flex;
     position: relative;
@@ -153,19 +190,111 @@ body{
     flex-wrap: wrap;
 } 
 .child{
-    height: 55vh;
-    width: 40vw;
-    /* background-color: red; */
-    position: relative;
+    height: 70vh;
+    width: 45vw;
+    position:relative;
+    display:inline-block;
+    align-items: center;
+    justify-content:center;
+}
+.child img{
+    height:100%;
+    width: 97%;
+}
+.child .image-caption{
+    text-align: center;
+}
+.image-caption a{
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+.comment2{
+    height: 120vh;
+    width: 212vh;
+}
+
+.comment2 #review h1{
+    font-family: 'futura';
+    text-align: center;
+    font-size: 4.5vw;
+    line-height: 5vw;
+    letter-spacing: -3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.send{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.child img{
-    height:100%;
-
+.message{
+    height: 7vh;
+    width: 40vh;
+   background-color: black;
+    border-radius: 23px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* font-family: 'futura'; */
+    color: #f7f7f7;
+    font-size:1vw;
+    cursor: pointer;
 }
-
+.impact{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    /* align-items: center; */
+    padding: 3vw 2vw;
+    justify-content:space-between;
+}
+.impact .our{
+   font-size: large;
+}
+.impact .pic img{
+    height:90vh;
+    width: 60vh;
+    margin: 10px;
+}
+.email{
+    display: flex;
+   justify-content:space-between;
+}
+.email h1{
+    font-size: 3vw;
+    font-family: 'futura';
+    padding:  0 20px;
+}
+.email i{
+    font-size: 40px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+#space{
+    height: 20vh;
+}
+#section{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding: 0 30px;
+}
+#section #faqs{
+   text-align: right;
+}
+#terms{
+    text-align: center;
+}
+#footer{
+    height: 25vh;
+    text-align: center;
+    font-size:1.1vw;
+}
 @media (max-width:600px){
     #nav{
         /* height: 100px; */
